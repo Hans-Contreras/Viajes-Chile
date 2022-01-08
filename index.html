@@ -1,31 +1,31 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <!-- Required meta tags -->
+    <!--Required meta tags-->
     <meta charset="utf-8">
+    <title>Viajes Chile</title>
+    <link rel="shortcut icon" type="image/png" href="./assets/img/viajes.svg">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
+    <!--Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500/display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700/display=swap" rel="stylesheet">
     <!--Kit Fontawesome-->
     <script src="https://kit.fontawesome.com/13e3518c8f.js" crossorigin="anonymous"></script>
-    <!--Estilos-->
+    <!--Mi Estilo-->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
-    <title>Viajes Chile</title>
+    
   </head>
 
   <body>
-      <div class="container-fluid px-0 bg-black"></div>
-      
-      <!-- Barra de Navegación -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top px-5">
+      <!--Barra de Navegación-->
+      <div id="up" class="container-fluid px-0 bg-black"></div>
+      <nav id="menu" class="navbar navbar-expand-lg navbar-dark fixed-top px-5">
           <div class=" container-fluid">
-              <a class="navbar-brand fs-8" href="#">
+              <a class="navbar-brand fs-10" href="#">
                   <img src="./assets/img/viajes.svg" alt="log" width="30"> Viajes Chile
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -37,16 +37,16 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
                       <li class="nav-item ">
-                          <a class="nav-link text-white" aria-current="page" href="#top">Inicio</a>
+                          <a class="nav-link text-white fs-10" aria-current="page" href="#up">Inicio</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#quienessomos">Quienes Somos</a>
+                          <a class="nav-link" aria-current="page" href="#quienes-somos">Quienes Somos</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link" aria-current="page" href="#destacados">Destacado</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link  " aria-current="page" href="#form">Contacto</a>
+                          <a class="nav-link" aria-current="page" href="#contacto">Contacto</a>
                       </li>
                   </ul>
               </div>
@@ -54,7 +54,7 @@
       </nav>
 
 
-      <!-- Sección Carousel -->
+      <!--Sección Carousel-->
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -80,9 +80,70 @@
       </div>
 
 
-      <!-- Sección Destacados -->
-      <section id="Destacados" class="container pb-5 px-5">
-          <h2 class="h4 text-white fw-light text-center my-5 border-bottom border-info pb-4">Destacados</h2>
+      <!--Sección "¿Quienes Somos?"-->
+      <section id="quienes-somos">
+            <div class="container pb-6 px-6"> 
+                <h2 class="text-white color-qs fw-light text-center my-5 border-bottom border-info pb-4">¿Quiénes somos?</h2>
+                <div class="row">
+
+                    <div class="col-4">
+                        <div class="card border-0 bg-transparent" style="width: 100%;">
+                            <i class="fas fa-plane bg-info text-center py-1 " style="height: 2.5rem;"></i>
+                            <div class="card-body p-0">
+                                <p class="card-text text-white fs-6 fw-light p-3">Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit, Laudantium cupiditate deserunt vel magnam cumque dignissimos explicabo 
+                                  velit id beatae excepturi voluptatum magni molestiae quaerat culpa cum tempora incidunt, 
+                                  voluptates iusto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+                                  cupiditate deserunt vel magnam cumque dignissimos explicabo velit id beatae excepturi 
+                                  voluptatum magni molestiae quaerat culpa cum tempora incidunt, voluptates iusto?
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col mx-3">
+                        <div class="card border-0 bg-transparent" style="width: 100%;">
+                            <div class="card-body p-0">
+                              <p class="card-text text-white fs-6 fw-light p-3">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit, Laudantium cupiditate deserunt vel magnam cumque dignissimos explicabo 
+                                velit id beatae excepturi voluptatum magni molestiae quaerat culpa cum tempora incidunt, 
+                                voluptates iusto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+                                cupiditate deserunt vel magnam cumque dignissimos explicabo velit id beatae excepturi 
+                                voluptatum magni molestiae quaerat culpa cum tempora incidunt, voluptates iusto?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+                              </p>
+                            </div>
+                            <i class="fas fa-mountain bg-info text-center py-1 " style="height: 2.5rem;"></i>
+                        </div>
+                    </div>
+
+                    <div class="col mx-3">
+                        <div class="card border-0 bg-transparent" style="width: 100%;">
+                            <i class="fas fa-route bg-info text-center py-1 " style="height: 2.5rem;"></i>
+                            <div class="card-body p-0">
+                              <p class="card-text text-white fs-6 fw-light p-3">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit, Laudantium cupiditate deserunt vel magnam cumque dignissimos explicabo 
+                                velit id beatae excepturi voluptatum magni molestiae quaerat culpa cum tempora incidunt, 
+                                voluptates iusto?Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+                                cupiditate deserunt vel magnam cumque dignissimos explicabo velit id beatae excepturi 
+                                voluptatum magni molestiae quaerat culpa cum tempora incidunt, voluptates iusto?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+                              </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+      <!--Sección Destacados-->
+      <section  id="destacados" class="container pb-6 px-6">
+          <h2 class="text-white fw-light text-center my-5 border-bottom border-info pb-4">Destacados</h2>
           
           <div class="row">
               <div class="col-xs-12 col-md-6 col-lg-3 mb-5 px-2">
@@ -92,7 +153,8 @@
                           <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
                           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, 
                             cupiditate! Veritatis consequuntur eligendi quos asperiores eaque quas saepe aspernatur, 
-                            obcaecati impedit quae! Sequi asperiores quos voluptatibus similique labore quidem quis.</p>
+                            obcaecati impedit quae! Sequi asperiores quos voluptatibus similique labore quidem quis.
+                          </p>
                       </div>
                   </div>
               </div>
@@ -104,7 +166,8 @@
                           <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
                           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, 
                             cupiditate! Veritatis consequuntur eligendi quos asperiores eaque quas saepe aspernatur, 
-                            obcaecati impedit quae! Sequi asperiores quos voluptatibus similique labore quidem quis</p>
+                            obcaecati impedit quae! Sequi asperiores quos voluptatibus similique labore quidem quis.
+                          </p>
                       </div>
                   </div>
               </div>
@@ -116,7 +179,8 @@
                           <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
                           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, 
                             cupiditate! Veritatis consequuntur eligendi quos asperiores eaque quas saepe aspernatur, 
-                            obcaecati impedit quae! Sequi asperiores quos voluptatibus similique labore quidem quis</p>
+                            obcaecati impedit quae! Sequi asperiores quos voluptatibus similique labore quidem quis.
+                          </p>
                       </div>
                   </div>
               </div>
@@ -128,24 +192,25 @@
                           <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
                           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, 
                             cupiditate! Veritatis consequuntur eligendi quos asperiores eaque quas saepe aspernatur, 
-                            obcaecati impedit quae! Sequi asperiores quos voluptatibus similique labore quidem quis</p>
+                            obcaecati impedit quae! Sequi asperiores quos voluptatibus similique labore quidem quis.
+                          </p>
                       </div>
                   </div>
               </div>
           </div>
       </section>
 
-    <!-- Formulario de Contacto 
-    <section id="Contacto">
+    <!--Sección Formulario Typerform-->
+    <section id="contacto">
       <div class="container py-5">
-        <h2 class="section-title pb-4 mb-5 text-center text-white">Contacto</h2>
+        <h2 class="text-white fw-light text-center my-5 border-bottom border-info pb-4">Contacto</h2>
         <div data-tf-widget="EB7So86B" data-tf-iframe-props="title=Registration Form" style="width:100%;height:400px;"></div>
         <script src="//embed.typeform.com/next/embed.js"></script>
       </div>
     </section>
-  -->
+  
     
-    <!-- Footer -->
+    <!--Footer-->
     <footer class="container-fluid bg-info d-flex justify-content-evenly align-items-center py-1 pt-2">
       <h3 class=" h3 text-white fs-3 ">VIAJES CHILE</h3>
       <div class="d-flex">
@@ -156,10 +221,14 @@
       </div>
     </footer>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!--JQuery 3.6.0-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
+    <!--Popper Js-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <!--Bootstrap Js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!--Mi script-->
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
