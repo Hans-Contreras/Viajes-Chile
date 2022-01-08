@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -7,14 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,500/display=swap" rel="stylesheet">
-
     <!--Kit Fontawesome-->
     <script src="https://kit.fontawesome.com/13e3518c8f.js" crossorigin="anonymous"></script>
-
     <!--Estilos-->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
@@ -22,43 +20,141 @@
   </head>
 
   <body>
+      <div class="container-fluid px-0 bg-black"></div>
+      
+      <!-- Barra de Navegación -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top px-5">
+          <div class=" container-fluid">
+              <a class="navbar-brand fs-8" href="#">
+                  <img src="./assets/img/viajes.svg" alt="log" width="30"> Viajes Chile
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                  aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
 
-    <div class="container-fluid px-0 bg-black">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top px-5">
-            <div class=" container-fluid">
-                <a class="navbar-brand fs-6" href="#">
-                    <img src="./assets/img/viajes.svg" alt="log" width="23">
-                    Viajes Chile
-                  </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                      <li class="nav-item ">
+                          <a class="nav-link text-white" aria-current="page" href="#top">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#quienessomos">Quienes Somos</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" aria-current="page" href="#destacados">Destacado</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link  " aria-current="page" href="#form">Contacto</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-                        <li class="nav-item ">
-                            <a class="nav-link text-white" aria-current="page" href="#top">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#quienessomos">Quienes Somos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#destacados">Destacado</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link  " aria-current="page" href="#form">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
+
+      <!-- Sección Carousel -->
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./assets/img/carousel1.jpg" class="d-block w-100">
             </div>
-        </nav>
+            <div class="carousel-item">
+                <img src="./assets/img/carousel2.jpg" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/img/carousel3.jpg" class="d-block w-100">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 
 
-    <!-- Formulario de Contacto -->
-    <div data-tf-widget="EB7So86B" data-tf-iframe-props="title=Registration Form" style="width:100%;height:400px;"></div>
-    <script src="//embed.typeform.com/next/embed.js"></script>
+      <!-- Sección Destacados -->
+      <section id="Destacados" class="container pb-5 px-5">
+          <h2 class="h4 text-white fw-light text-center my-5 border-bottom border-info pb-4">Destacados</h2>
+          
+          <div class="row">
+              <div class="col-xs-12 col-md-6 col-lg-3 mb-5 px-2">
+                  <div class="card">
+                      <img src="./assets/img/card1.jpg" class="card-img-top" alt="card 1">
+                      <div class="card-body bg-info text-white px-4 pt-3 pb-5 fw-light">
+                          <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, 
+                            cupiditate! Veritatis consequuntur eligendi quos asperiores eaque quas saepe aspernatur, 
+                            obcaecati impedit quae! Sequi asperiores quos voluptatibus similique labore quidem quis.</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-xs-12 col-md-6 col-lg-3 mb-5 px-2">
+                  <div class="card">
+                      <img src="./assets/img/card2.jpg" class="card-img-top" alt="card 2">
+                      <div class="card-body bg-info text-white px-4 pt-3 pb-5 fw-light">
+                          <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, 
+                            cupiditate! Veritatis consequuntur eligendi quos asperiores eaque quas saepe aspernatur, 
+                            obcaecati impedit quae! Sequi asperiores quos voluptatibus similique labore quidem quis</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-xs-12 col-md-6 col-lg-3 mb-5 px-2">
+                  <div class="card">
+                      <img src="./assets/img/card3.jpg" class="card-img-top" alt="card 3">
+                      <div class="card-body bg-info text-white px-4 pt-3 pb-5 fw-light">
+                          <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, 
+                            cupiditate! Veritatis consequuntur eligendi quos asperiores eaque quas saepe aspernatur, 
+                            obcaecati impedit quae! Sequi asperiores quos voluptatibus similique labore quidem quis</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-xs-12 col-md-6 col-lg-3 mb-5 px-2">
+                  <div class="card">
+                      <img src="./assets/img/card4.jpg" class="card-img-top" alt="card 4">
+                      <div class="card-body bg-info text-white px-4 pt-3 pb-5 fw-light">
+                          <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, 
+                            cupiditate! Veritatis consequuntur eligendi quos asperiores eaque quas saepe aspernatur, 
+                            obcaecati impedit quae! Sequi asperiores quos voluptatibus similique labore quidem quis</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+    <!-- Formulario de Contacto 
+    <section id="Contacto">
+      <div class="container py-5">
+        <h2 class="section-title pb-4 mb-5 text-center text-white">Contacto</h2>
+        <div data-tf-widget="EB7So86B" data-tf-iframe-props="title=Registration Form" style="width:100%;height:400px;"></div>
+        <script src="//embed.typeform.com/next/embed.js"></script>
+      </div>
+    </section>
+  -->
+    
+    <!-- Footer -->
+    <footer class="container-fluid bg-info d-flex justify-content-evenly align-items-center py-1 pt-2">
+      <h3 class=" h3 text-white fs-3 ">VIAJES CHILE</h3>
+      <div class="d-flex">
+          <a href="https://github.com/" target="_blank"><i class="fab fa-github-square "></i></a>
+          <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square"></i></a>
+          <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+      </div>
+    </footer>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
